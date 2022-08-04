@@ -35,19 +35,21 @@ met1, met2 = st.columns([2,1])
 with met1:
     st.markdown("<h3 style='text-align: center; color: red;'>Fraksi Bahan Bakar Memasak RT Indonesia 2001, 2007-2016</h3>", unsafe_allow_html=True)
     sales = df[['tahun', 'lpg', 'listrik', 'minyak_tanah', 'arang', 'kayu', 'lainnya']].set_index('tahun')
-    st.area_chart(
-        sales
-    )
+    st.area_chart(sales)
+    st.write("Sumber : BPS")
 with met2:
     freq = st.selectbox("Pilih Jenis Bahan Bakar Memasak", ['lpg', 'listrik','minyak_tanah', 'arang', 'kayu', 'lainnya'])
     sales2 = df[['tahun', freq]].set_index('tahun')
     st.bar_chart(
         sales2
     )
+    st.write("*dalam persentase")
 nat1, nat2 = st.columns([2,1])
 with nat1:
     j= st.container()
     j.write("LPG atau Liqufied Petroleum Gas menjadi bahan bakar utama yang signifikan digunakan oleh masyarakat Indonesia utamanya sejak 2011. Sementara itu penggunaan arang, kayu, minyak tanah semakin ditinggalkan oleh masyarakat Indonesia.")
+    j.write("Penggunaan bahan bakar memasak listrik terlihat mengalami tren yang menurun. Hal ini di hopetisikan mungkin saja 'magic jar' dan alat lainnya baru ditemukan dan menjadi viral. Kemudian hal ini didesak dengan program konversi LPG yang digalakkan mulai tahun 2008")
+st.markdown("<h3 style='text-align: center; color: red;'>Besaran Subsidi LPG</h3>", unsafe_allow_html=True)
 # Pembengkakan Subsidi LPG
 subsidi = pd.read_excel("subsidi.xlsx")
 #deklarasi date
@@ -57,15 +59,15 @@ subl1, subl2 = st.columns([1,3])
 with subl1:
     uang = subsidi.iloc[:, [0, -2,-1]]
     st.dataframe(uang)
-    st.write("*data Besaran subsidi dengan asumsi 10.520 Rupiah/metrik (dalam Rupiah)")
+    st.write("*data Besaran subsidi dengan asumsi 10,520 Rupiah/metrik (dalam Rupiah)")
 with subl2:
     subs1 = subsidi[['date', 'Realisasi', 'Kuota']].set_index('date')
     st.area_chart(subs1)
     st.write("*dalam juta metrik ton")
+    st.write(" Sumber: BPS")
     su = st.container()
-    su.write("Besaran Subsidi LPG terus meningkat dari waktu ke waktu. Setidaknya APBN harus terbebani dengan beban subsidi LPG di tahun 2022 sebesar 84 triliun. Namun besaran subsidi ini hanyalah estimasi mengingat konversi besaran subsidi diasumsikan sama setiap tahun (Rp. 10520/metrik)")
+    su.write("Besaran Subsidi LPG terus meningkat dari waktu ke waktu. Setidaknya APBN harus terbebani dengan beban subsidi LPG di tahun 2022 sebesar 84 triliun. Namun besaran subsidi ini hanyalah estimasi mengingat konversi besaran subsidi diasumsikan sama setiap tahun (Rp. 10,520/metrik)")
 # data kedua tentang harga LPG
-st.subheader("Harga komponen utama LPG")
 harga = pd.read_csv("spot-prices.csv", sep=',')
 # Data prep
 harga['date'] = pd.to_datetime(harga['date'])
@@ -74,12 +76,17 @@ harga['date'] = pd.to_datetime(harga['date'])
 # Membuat line chart
 harga1, harga2 = st.columns([4,1])
 with harga1:
+    st.markdown("<h3 style='text-align: center; color: red;'>Harga komponen utama LPG</h3>", unsafe_allow_html=True)
     harga_line = harga[['date', ' propane', ' normal butane']].set_index('date').resample('M').mean()
     st.line_chart(  harga_line)
 with harga2:
     hu = st.container()
+    hu.write(" ")
+    hu.write(" ")
+    hu.write(" ")
     hu.write("Komponen utama LPG adalah propane (C3H8) dan butana (C4H10). Harga komponen gas itu ditentukan oleh CP Aramco. Bisa dilihat harganya fluktuatif dan mengalami kenaikan signifikan dalam lima tahun terakhir.")
-
+    hu.write(" ")
+    hu.write("Sumber : Energydata")
 ## Data Konsumsi Listrik Domestik
 st.markdown("<h3 style='text-align: center; color: red;'>Data Kelistrikan</h3>", unsafe_allow_html=True)
 do = st.container()
@@ -112,6 +119,10 @@ with hat33:
     y=alt.Y('country', sort =None),
     x= alt.X(c22),
 ))
+ct, ct2 = st.columns(2)
+with ct : st.write("Sumber : US Energy Information and Administration")
+with ct2 : st.markdown("<h5 style='text-align: right; color: black;'>*dalam TWh</h5>", unsafe_allow_html=True)
+
 hy = st.container()
 hy.write("Dapat dilihat pada tahun 2020, China menjadi negara yang mengonsumsi listrik terbesar di dunia. China mengalahkan USA di tahun 2011. Dari tabel konsumsi listrik ini bisa dilihat Indonesia memiliki nilai yang masih rendah dibanding negara dengan populasi besar lainnya.")
 
@@ -152,6 +163,7 @@ for patch in ax.patches:
     y = patch.get_y()
     ax.text(w+ -0.1, h/2+y, f'{w:.3f}', va='center')
 st.pyplot(fig)
+st.write("Sumber: ESDM, Katadata")
 st.write(">Pertumbuhan Konsumsi listrik secara mayoritas turun signifikan dikala PLN mengklaim mengalami surplus pasokan listrik")
 st.markdown("<h3 style='text-align: left; color: red;'>Kesimpulan</h3>", unsafe_allow_html=True)
 h= st.container()
