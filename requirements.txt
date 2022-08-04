@@ -5,5 +5,5 @@ seaborn
 matplotlib
 plotly
 joblib
-numerizer
+numerize
 pillow
