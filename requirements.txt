@@ -1,0 +1,10 @@
+streamlit
+pandas
+numpy
+seaborn
+matplotlib
+plotly
+joblib
+numerizer
+pillow
+altair vega_datasets
