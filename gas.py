@@ -1,7 +1,4 @@
-from codecs import latin_1_decode
 from datetime import date
-from tkinter import Y
-from pytz import country_timezones
 from requests import delete
 import streamlit as st
 import pandas as pd
@@ -15,7 +12,6 @@ import altair as alt
 import streamlit as st
 import streamlit.components.v1 as components
 import numpy as np
-import pydeck as pdk
 from numerize import numerize
 
 
