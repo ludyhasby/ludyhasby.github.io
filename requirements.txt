@@ -7,3 +7,4 @@ plotly
 joblib
 numerize
 pillow
+openpyxl
