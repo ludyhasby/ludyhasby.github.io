@@ -102,7 +102,7 @@ lt = lt1.iloc[:, 2:]
 plis = st.selectbox("Masukkan Tahun Pilihan", ["2020","2019","2018","2017","2016","2015","2014","2013","2012","2011","2010", "2019","2008","2007","2006","2005","2004","2003", "2002", "2001", "2000"])
 
 # display 3 kolom
-hat33, hat22, hat11 = st.columns(3)
+hat33, hat22, hat11 = st.columns([3,3,2])
 with hat33:
     st.write("Konsumsi listrik", str(plis))
     st.write(alt.Chart(lt).mark_bar().encode(
