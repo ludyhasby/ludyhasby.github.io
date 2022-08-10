@@ -13,7 +13,6 @@ import streamlit as st
 import streamlit.components.v1 as components
 import numpy as np
 from numerize import numerize
-from pymccorrelation import pymccorrelation
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import statsmodels.api as sm
