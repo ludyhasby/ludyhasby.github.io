@@ -8,3 +8,7 @@ joblib
 numerize
 pillow
 openpyxl
+pymc
+scikit-learn
+statsmodels
+stats
