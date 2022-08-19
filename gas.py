@@ -50,7 +50,7 @@ nat1, nat2 = st.columns([2,1])
 with nat1:
     j= st.container()
     j.write("LPG atau Liqufied Petroleum Gas menjadi bahan bakar utama yang signifikan digunakan oleh masyarakat Indonesia utamanya sejak 2011. Sementara itu penggunaan arang, kayu, minyak tanah semakin ditinggalkan oleh masyarakat Indonesia.")
-    j.write("Penggunaan bahan bakar memasak listrik terlihat mengalami tren yang menurun. Hal ini di hopetisikan mungkin saja 'magic jar' dan alat lainnya baru ditemukan dan menjadi viral. Kemudian hal ini didesak dengan program konversi LPG yang digalakkan mulai tahun 2008")
+    j.write("Penggunaan bahan bakar memasak listrik terlihat mengalami tren yang menurun. Hal ini di hipetesiskan mungkin saja 'magic jar' dan alat lainnya baru ditemukan dan menjadi viral. Kemudian hal ini didesak dengan program konversi LPG yang digalakkan mulai tahun 2008")
 st.markdown("<h3 style='text-align: center; color: red;'>Besaran Subsidi LPG</h3>", unsafe_allow_html=True)
 # Pembengkakan Subsidi LPG
 subsidi = pd.read_excel("subsidi.xlsx")
