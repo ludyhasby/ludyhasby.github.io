@@ -265,7 +265,7 @@ with kl2:
     kl = st.container()
     kl.write("- Dengan asumsi 23,6 kWh setara dengan 3 metrik gas dan listrik dengan subsidi berbiaya 495/kWh, 1 tabung lpg = 11.682 Rupiah sedangkan harga LPG bersubsidi rata-rata berkisar 21.000 Rupiah. (Kompor Listrik lebih hemat dibanding LPG sekalipun bersubsidi, cateris paribus)")
     kl.write("- Lebih aman-> Tidak ada api, asap, dll (Kompas, 2021)")
-    kl.write("- Lebih praktis -> Mudah digunakan, lebih cepat karena terkonduktor langsung, (Kompas, 2021)")
+    kl.write("- Lebih praktis -> Mudah digunakan, lebih cepat karena berkonduksi langsung, (Kompas, 2021)")
     kl.write("- Lebih bersih (Kompas, 2021)")
     kl.write("- Pengaturan suhu yang lebih akurat (Kompas, 2021)")
 st.markdown("<h3 style='text-align: left; color: red;'>Kesimpulan</h3>", unsafe_allow_html=True)
