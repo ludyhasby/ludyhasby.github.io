@@ -260,7 +260,7 @@ kl1, kl2 = st.columns([1,3])
 with kl1:
     foto = Image.open("kl.jpg")
     st.image(foto)
-    st.markdown("<h6 style='text-align: center; color: black;'>sumber gambar: BPGuide</h6>", unsafe_allow_html=True)
+    st.markdown("<h6 style='text-align: center; color: blue;'>sumber gambar: BPGuide</h6>", unsafe_allow_html=True)
 with kl2:
     kl = st.container()
     kl.write("- Dengan asumsi 23,6 kWh setara dengan 3 metrik gas dan listrik dengan subsidi berbiaya 495/kWh, 1 tabung lpg = 11.682 Rupiah sedangkan harga LPG bersubsidi rata-rata berkisar 21.000 Rupiah. (Kompor Listrik lebih hemat dibanding LPG sekalipun bersubsidi, cateris paribus)")
