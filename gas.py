@@ -270,7 +270,7 @@ with kl2:
     kl.write("- Pengaturan suhu yang lebih akurat (Kompas, 2021)")
 st.markdown("<h3 style='text-align: left; color: red;'>Kesimpulan</h3>", unsafe_allow_html=True)
 h= st.container()
-h.write("Distribusi LPG subsidi yang buruk  memungkinkan menjadi penyebab tingginya prmintaan subsidi sehingga beban subsidi terus membengkak. Selain itu, harga komoditasnya fluktuatif cenderung naik sedangkan komoditasnya didominasi impor memperparah beban subsidi. Dilain sisi, perilaku konsumsi listrik Indonesia relatif rendah dibandingkan negara lain. Sedangkan Populasi Indonesia relatif sangat besar. Analisis membuktikan populasi memperuhi besaran konsumsi listrik. Oleh karena itu, penghentian subsidi LPG dapat menjadi opsi dan pengalihannya ke subsidi listrik dalam program Kompor Induksi dapat ditelaah lebih lanjut sebagai solusi alternatif.")
+h.write("Distribusi LPG subsidi yang buruk  memungkinkan menjadi penyebab tingginya prmintaan subsidi sehingga beban subsidi terus membengkak. Selain itu, harga komoditasnya fluktuatif cenderung naik sedangkan komoditasnya didominasi impor memperparah beban subsidi. Dilain sisi, perilaku konsumsi listrik Indonesia relatif rendah dibandingkan negara lain. Sedangkan Populasi Indonesia relatif sangat besar. Analisis membuktikan populasi memperuhi besaran konsumsi listrik. Oleh karena itu, penghentian subsidi LPG dapat menjadi opsi dan direkomendasikan kuat untuk mengalihkannya ke program kompor listrik, salah satunya dalam bentuk subsidi.")
 
 # Apps Subsidi
 # Sidebar
