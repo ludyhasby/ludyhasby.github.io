@@ -54,6 +54,16 @@ export default function Portfolio() {
 
   const experiences = [
     {
+      company: 'Techbros',
+      role: 'Backend Developer Intern',
+      period: 'November 2025 - Present',
+      logo: '/images/techbros.jpeg',
+      responsibilities: [
+        'Developing and maintaining RESTful APIs using Golang',
+        'Designing scalable backend architecture and database schemas'
+      ]
+    },
+    {
       company: 'Binus Online',
       role: 'Laboratory Assistant - Computational & Programming for Data Science',
       period: 'July 2025 - Present',
@@ -61,7 +71,8 @@ export default function Portfolio() {
       responsibilities: [
         'Facilitated practicum sessions for Computing and Programming for Data Science cluster (CS005)',
         'Delivered course materials through lectures, live coding demonstrations',
-        'Assessed and graded assignments with constructive feedback'
+        'Assessed and graded assignments with constructive feedback',
+        'Handled following lab courses: Computational Statistics (July-Present), Algorithm and Programming (October - Present)'
       ]
     },
     {
@@ -127,15 +138,17 @@ export default function Portfolio() {
     { title: 'Financial Track', org: 'Bangkit Academy Capstone', image: '/images/ekspensi.png' },
     { title: 'PeacePath: Navigate with Ease', org: 'AI Competition Umrah', image: '/images/peacePath.png' },
     { title: 'PANDAWA - Eye Disease Detection', org: 'TSDN 2024', image: '/images/tsdn.png' },
-    { title: 'SahihAI: Integrated Worship Assistant', org: 'MTQ Desain Aplikasi', image: '/images/sahihAI.png' }
+    { title: 'SahihAI: Integrated Worship Assistant', org: 'MTQ Desain Aplikasi', image: '/images/sahihAI.png' },
+    { title: 'LacaKas: Every Receh Counts', org: 'Korea Asean Digital Academy II 2025', image: '/images/lacakas.png' }
   ];
 
   const achievements = [
     { title: 'Dev Certified for Machine Learning with TensorFlow', link: 'https://dev.id/certificate/verify/KRW2JPGWND' },
-    { title: '3rd Place Regression Rumble NDC 2025: Advanced Ocean Data Regression Challenge', link: '#' },
-    { title: 'Semifinalist Statistics Analysis Competition (SAC) Gammafest 2024', link: '#' },
-    { title: '2nd Place in Data Analytics Competition Pesta Data Nasional FST UIN Jakarta 2023', link: '#' },
-    { title: 'Awardee and Top Achiever Tetris Batch 2 Data Analytics Scholarship from DQLab', link: '#' }
+    { title: 'Third Runner-up MTQMN Desain Aplikasi Alquran', link: 'https://drive.google.com/file/d/1f4dH1llLNht0fgbCe5_oTLGHwetPo9o4/view?usp=sharing' },
+    { title: '3rd Place Regression Rumble NDC 2025: Advanced Ocean Data Regression Challenge', link: 'https://drive.google.com/file/d/1K7pWPmVKunxcMz_Ro3Sl4y8_6Yv1N8DU/view?usp=sharing' },
+    { title: 'Semifinalist Statistics Analysis Competition (SAC) Gammafest 2024', link: 'https://drive.google.com/file/d/14xjIRDjhTv1yP48kBBwxzQ-O1X1uuqzm/view?usp=sharing' },
+    { title: '2nd Place in Data Analytics Competition Pesta Data Nasional FST UIN Jakarta 2023', link: 'https://drive.google.com/file/d/1gEY6PW4cgjogSRD5HB-2e7x1XGH6xacI/view?usp=sharing' },
+    { title: 'Awardee and Top Achiever Tetris Batch 2 Data Analytics Scholarship from DQLab', link: 'https://drive.google.com/file/d/1ksEMhIC1Y5nBZt6pjXCRFXXzWbgitRdj/view?usp=sharing' }
   ];
 
   return (
@@ -209,7 +222,7 @@ export default function Portfolio() {
 
             <div className="intro-box">
               <p className="subtitle">Aspiring</p>
-              <h1 className="title">Data Scientist/Engineer/Analyst</h1>
+              <h1 className="title">Software & AI Engineer</h1>
               <p className="subtitle">Machine Learning Enthusiast</p>
             </div>
 
@@ -218,10 +231,10 @@ export default function Portfolio() {
                 <img src="/test.png" alt="Ludy Hasby" className="profile-picture" />
               </div>
               <div className="about-text">
-                <p>👋🏻 Hi, I'm Ludy! Having prior relevant experiences in tech and economics, I am constantly seeking unique internships to broaden my horizons before embarking on my data career upon graduation.</p>
-                <p>💼 I believe data science has huge potential in retail industry, financial sector, etc. I am aiming to enter this field for my first full-time job.</p>
-                <p>👨🏼‍💻 <strong>Academic interests:</strong> Data Visualization, Recommendation Systems, Natural Language Processing</p>
-                <p>💭 <strong>Ideal Career:</strong> Data Analyst, Data Scientist, Data Engineer, Business Intelligence Analyst, Product Manager</p>
+                <p>👋🏻 Hi, I'm Ludy! A software & data enthusiast with hands-on experience in machine learning, analytics, and backend engineering.</p>
+                <p>💼 I’m passionate about building end-to-end solutions that combine data intelligence with robust software development.</p>
+                <p>👨🏼‍💻 <strong>Interests:</strong> ML Engineering, Full-Stack Development, NLP, Data Engineering.</p>
+                <p>🚀 <strong>Goal:</strong> To grow as a developer who can build scalable data-driven products.</p>
               </div>
             </div>
           </div>
@@ -258,11 +271,11 @@ export default function Portfolio() {
             <div className="skills-grid">
               <div className="skill-card">
                 <h3>Programming Languages</h3>
-                <p>Python, SQL, C++, C, R, Java, Stata</p>
+                <p>Python, Javascript, SQL, C++, C, R, Java, Stata</p>
               </div>
               <div className="skill-card">
                 <h3>Frameworks</h3>
-                <p>TensorFlow, PyTorch, Streamlit, Keras, Scikit-learn, Django</p>
+                <p>Express, Flask, React, TensorFlow, PyTorch, Streamlit, Keras, Scikit-learn, Django</p>
               </div>
               <div className="skill-card">
                 <h3>Data Visualization</h3>
@@ -270,7 +283,7 @@ export default function Portfolio() {
               </div>
               <div className="skill-card">
                 <h3>Database Systems</h3>
-                <p>MySQL, PostgreSQL, SQLite</p>
+                <p>MongoDB, MySQL, PostgreSQL, SQLite</p>
               </div>
               <div className="skill-card skill-card-wide">
                 <h3>Data Science Techniques</h3>
