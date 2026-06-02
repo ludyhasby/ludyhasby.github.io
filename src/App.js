@@ -56,11 +56,13 @@ export default function Portfolio() {
     {
       company: 'Techbros',
       role: 'Backend Developer Intern',
-      period: 'November 2025 - Present',
+      period: 'November 2025 - May 2026',
       logo: '/images/techbros.jpeg',
       responsibilities: [
-        'Developing and maintaining RESTful APIs using Golang',
-        'Designing scalable backend architecture and database schemas'
+        'Contributed to the development of systems by building and maintaining RESTful APIs enabling reliable data processing for core business operations.',
+        'Improved system performance and scalability by designing backend architecture and optimizing database schemas and SQL queries, resulting in faster data retrieval and reduced response time.', 
+        'Enhanced system reliability by implementing authentication, input validation, and structured error handling, reducing potential system failures and improving API robustness.', 
+        'Golang (Fiber), GORM, PostgreSQL, Redis, Docker'
       ]
     },
     {
@@ -87,25 +89,15 @@ export default function Portfolio() {
       ]
     },
     {
-      company: 'Kanopi FEB UI',
-      role: 'Tutor',
-      period: 'January 2023 - January 2025',
-      logo: '/images/kanopi.png',
-      responsibilities: [
-        'Tutored 100+ students in statistics and mathematical economics',
-        'Improved academic performance through structured materials',
-        'Utilized R and Excel for statistical problem-solving'
-      ]
-    },
-    {
       company: 'PT Bank Syariah Indonesia',
-      role: 'Data Analytics Intern',
+      role: 'Data Decision Management Intern',
       period: 'May 2024 - August 2024',
       logo: '/images/bsi.png',
       responsibilities: [
-        'Achieved 93% validation accuracy with Hybrid Bi-LSTM sentiment analysis',
-        'Built LDA model to cluster BSI Mobile user reviews',
-        'Developed web application with ML-Ops architecture'
+        'Enabled automated sentiment analysis of user reviews by developing an end-to-end NLP-based web system, improving the efficiency of identifying customer issues in BSI Mobile.',
+        'Built scalable data pipelines by implementing scraping, preprocessing, and integration processes, enabling structured data flow for downstream machine learning tasks.',
+        'Improved system scalability by designing batch processing and ML pipeline architecture, enabling near real-time prediction and efficient data processing.', 
+        'Python (Streamlit), Tensorflow, Scikit-Learn, MySQL'
       ]
     },
     {
@@ -125,14 +117,16 @@ export default function Portfolio() {
       period: 'September 2022 - November 2022',
       logo: '/images/xeratic.png',
       responsibilities: [
-        'Conducted ETL processing using Pentaho',
-        'Developed interactive Tableau dashboards',
-        'Optimized SQL scripts for data loading and transformation'
+        'Transformed raw data into analytics-ready datasets by designing and implementing batch ETL pipelines using Pentaho, enabling efficient data analysis and reporting.',
+        'Improved data processing performance by optimizing SQL queries, resulting in faster data loading and more efficient reporting workflows',
+        'Supported data-driven decision making by collaborating with analytics teams to deliver Tableau dashboards built on curated datasets.', 
+        'Pentaho, PostgreSQL, Tableau'
       ]
     }
   ];
 
   const projects = [
+    { title: 'Logisfy: Manage Delivery Operations With Confidence', org: 'PT Technology Data Nusantara', image: '/images/logisfy.png' },
     { title: 'NLP Sentiment & LDA Analysis', org: 'PT Bank Syariah Indonesia', image: '/images/project_nlp_bsi.png' },
     { title: 'Automation Generating P2TL', org: 'UP3 Menteng', image: '/images/p2tl.png' },
     { title: 'Financial Track', org: 'Bangkit Academy Capstone', image: '/images/ekspensi.png' },
@@ -221,9 +215,7 @@ export default function Portfolio() {
             </div>
 
             <div className="intro-box">
-              <p className="subtitle">Aspiring</p>
-              <h1 className="title">Software & AI Engineer</h1>
-              <p className="subtitle">Machine Learning Enthusiast</p>
+              <h1 className="title">Backend Developer</h1>
             </div>
 
             <div className="about-grid">
@@ -231,7 +223,7 @@ export default function Portfolio() {
                 <img src="/test.png" alt="Ludy Hasby" className="profile-picture" />
               </div>
               <div className="about-text">
-                <p>👋🏻 Hi, I'm Ludy! A software & data enthusiast with hands-on experience in machine learning, analytics, and backend engineering.</p>
+                <p>👋🏻 Hi, I'm Ludy! A backend developer with hands-on experience in machine learning, analytics, and backend engineering.</p>
                 <p>💼 I’m passionate about building end-to-end solutions that combine data intelligence with robust software development.</p>
                 <p>👨🏼‍💻 <strong>Interests:</strong> ML Engineering, Full-Stack Development, NLP, Data Engineering.</p>
                 <p>🚀 <strong>Goal:</strong> To grow as a developer who can build scalable data-driven products.</p>
@@ -271,19 +263,19 @@ export default function Portfolio() {
             <div className="skills-grid">
               <div className="skill-card">
                 <h3>Programming Languages</h3>
-                <p>Python, Javascript, SQL, C++, C, R, Java, Stata</p>
+                <p>Golang, Python, Javascript, SQL, C++, C, R, Java, Stata</p>
               </div>
               <div className="skill-card">
                 <h3>Frameworks</h3>
-                <p>Express, Flask, React, TensorFlow, PyTorch, Streamlit, Keras, Scikit-learn, Django</p>
-              </div>
-              <div className="skill-card">
-                <h3>Data Visualization</h3>
-                <p>Matplotlib, Tableau, Seaborn, Altair, Plotly, GIS, SAP Data Analytics</p>
+                <p>Go Fiber, Express, Flask, React, TensorFlow, PyTorch, Streamlit, Keras, Scikit-learn, Django</p>
               </div>
               <div className="skill-card">
                 <h3>Database Systems</h3>
-                <p>MongoDB, MySQL, PostgreSQL, SQLite</p>
+                <p>PostgreSQL, MongoDB, MySQL, SQLite</p>
+              </div>
+              <div className="skill-card">
+                <h3>Tools</h3>
+                <p>Docker, EC2, DigitalOcean, DBT, Polars, Pentaho</p>
               </div>
               <div className="skill-card skill-card-wide">
                 <h3>Data Science Techniques</h3>
@@ -384,9 +376,8 @@ export default function Portfolio() {
               <div className="contact-card">
                 <h3>Current Work</h3>
                 <ul>
-                  <li>Lab Assistant for Computational Stats</li>
-                  <li>Thesis: Impact of Imports on Apparel Industry</li>
-                  <li>LLM Fine Tuning - Bajau Escorindo</li>
+                  <li>Logisfy Phase 3</li>
+                  <li>Golang Developer</li>
                 </ul>
               </div>
             </div>
